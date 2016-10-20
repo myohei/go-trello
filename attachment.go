@@ -24,7 +24,7 @@ type Attachment struct {
 	EdgeColor string   `json:"edgeColor"`
 	IdMember  string   `json:"idMember"`
 	IsUpload  bool     `json:"isUpload"`
-	MimeType  []string `json:"mimeType"`
+	MimeType  string `json:"mimeType"`
 	Name      string   `json:"name"`
 	Previews  []struct {
 		Width  int    `json:"width"`
@@ -34,5 +34,5 @@ type Attachment struct {
 		Id     string `json:"_id"`
 		Scaled bool   `json:"scaled"`
 	} `json:"previews"`
-	Url string `json:"url"`
+	Url       string `json:"url"`
 }
